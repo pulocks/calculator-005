@@ -1,4 +1,9 @@
+let error = 0;
 function addText(ch) {
+    if(error === 1) {
+        document.getElementById('display').value = '';
+        error = 0;
+    }
     const text = document.getElementById('display').value;
 
     if(!check(ch)) {
@@ -21,10 +26,13 @@ function calculateResult(event) {
         if(res === Infinity) throw 'Divide by Zero';
         if(isNaN(res)) throw 'Result is Undefined';
         document.getElementById('display').value = res;
+        document.getElementById('display').value = res;
     }
     catch(err) {
         document.getElementById('display').value = err;
+        error = 1;
     }
+
 }
 
 function clearDisplay() {
