@@ -16,9 +16,15 @@ function calculateResult(event) {
     if(check(readValue.charAt(readValue.length-1))) { 
         readValue = readValue.substring(0, readValue.length-1);
     }
-
-    const res = parseFloat(eval(readValue).toFixed(2));
-    document.getElementById('display').value = res;
+    try {
+        const res = parseFloat(eval(readValue).toFixed(2));
+        if(res === Infinity) throw 'Divide by Zero';
+        if(isNaN(res)) throw 'Not a Number';
+        document.getElementById('display').value = res;
+    }
+    catch(err) {
+        document.getElementById('display').value = err;
+    }
 }
 
 function clearDisplay() {
