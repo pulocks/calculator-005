@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h4 class="header">Calculator</h4>
+            <form onsubmit="">
+                <input type="text" id="display" readonly>
+                <br><br>
+                <input type="button" value="9" onclick="addText(value)">
+                <input type="button" value="8" onclick="addText(value)">
+                <input type="button" value="7" onclick="addText(value)">
+                <input type="button" value="+" onclick="addText(value)">
+                <br><br>
+                <input type="button" value="6" onclick="addText(value)">
+                <input type="button" value="5" onclick="addText(value)">
+                <input type="button" value="4" onclick="addText(value)">
+                <input type="button" value="-" onclick="addText(value)">
+                <br><br>
+                <input type="button" value="3" onclick="addText(value)">
+                <input type="button" value="2" onclick="addText(value)">
+                <input type="button" value="1" onclick="addText(value)">
+                <input type="button" value="*" onclick="addText(value)">
+                <br><br>
+                <input type="button" value="0" onclick="addText(value)">
+                <input type="button" value="/" onclick="addText(value)">
+                <input type="button" value="%" onclick="addText(value)">
+                <input type="submit" value="=" onclick="calculateResult(event)">
+                <br><br>
+                <input type="button" value="." onclick="addText(value)">
+                <input type="button" value="Clear" id="clear" onclick="clearDisplay()">
+            </form> 
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
