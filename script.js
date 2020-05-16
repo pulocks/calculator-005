@@ -19,7 +19,7 @@ function calculateResult(event) {
     try {
         const res = parseFloat(eval(readValue).toFixed(2));
         if(res === Infinity) throw 'Divide by Zero';
-        if(isNaN(res)) throw 'Not a Number';
+        if(isNaN(res)) throw 'Result is Undefined';
         document.getElementById('display').value = res;
     }
     catch(err) {
