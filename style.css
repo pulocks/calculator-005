@@ -11,16 +11,16 @@
     background-color: rgb(48, 48, 228);
 }
 input[type=text] {
-    width: 250px;
+    width: 260px;
     font-weight: 700;
 }
 input[type=button], [type=submit] {
-    width: 50px;
+    width: 55px;
     border-radius: 5px;
     font-weight: 700;
 }
 #clear {
-    width: 100px;
+    width: 110px;
 }
 .header {
     display: flex;
