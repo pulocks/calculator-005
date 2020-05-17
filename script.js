@@ -1,5 +1,7 @@
 let error = 0;
+
 function addText(ch) {
+
     if(error === 1) {
         document.getElementById('display').value = '';
         error = 0;
@@ -37,6 +39,13 @@ function calculateResult(event) {
 
 function clearDisplay() {
     document.getElementById('display').value = '';
+}
+
+function deleteLast() {
+    let text = document.getElementById('display').value;
+    text = text.substring(0, text.length-1); 
+    if(error === 0) document.getElementById('display').value = text;
+    else document.getElementById('display').value = '';
 }
 
 function check(ch) {

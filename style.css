@@ -20,7 +20,7 @@ input[type=button], [type=submit] {
     font-weight: 700;
 }
 #clear {
-    width: 150px;
+    width: 100px;
 }
 .header {
     display: flex;
