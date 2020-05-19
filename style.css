@@ -13,6 +13,10 @@
 input[type=text] {
     width: 260px;
     font-weight: 700;
+    text-align: right;
+    font-family: digital-clock-font;
+    font-size: 16px;
+    font-weight: 700;
 }
 input[type=button], [type=submit] {
     width: 55px;
